@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>The Weather</title>
+  </head>
+  <style>
+    .wireframe1 {
+      border: 1px solid black;
+    }
+
+    .wireframe2 {
+      border: 1px solid red;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 class="header">Weather Dashboard</h1>
+    </header>
+    <section id="container" class="container wireframe1">
+      <div class="row">
+        <div class="col-lg-4 wireframe2">
+          <p><strong>Search for a City:</strong></p>
+          <input
+            name="text"
+            id="mySearch"
+            placeholder="Search.."
+            title="Type in a category"
+          />
+          <button type="button" id="sub-btn" class="btn">Search</button>
+
+          <hr />
+          <div id="history"></div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div id="current">
+              <h3 id="displayCity"></h3>
+              <div id="weatherInfo" class="weather-container">
+                <div id="temperature"></div>
+                <div id="wind"></div>
+                <div id="humidity"></div>
+                <i id="weatherIcon" class="fas"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="forecast">
+            <div class="col-lg-12">
+              <p><strong>5-Day Forecast</strong></p>
+              <div class="row" id="forecastItemsDiv">
+                <div class="col-lg-2">
+                  <!-- <h4>Day 1</h4> -->
+                  <div class="forecast-item">
+                    <div class="forecast-date"></div>
+                    <div class="forecast-temperature"></div>
+                    <div class="forecast-wind"></div>
+                    <div class="forecast-humidity"></div>
+                    <i class="forecast-weather-icon fas"></i>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <!-- <h4>Day 2</h4> -->
+                  <div class="forecast-item">
+                    <div class="forecast-date"></div>
+                    <div class="forecast-temperature"></div>
+                    <div class="forecast-wind"></div>
+                    <div class="forecast-humidity"></div>
+                    <i class="forecast-weather-icon fas"></i>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <!-- <h4>Day 3</h4> -->
+                  <div class="forecast-item">
+                    <div class="forecast-date"></div>
+                    <div class="forecast-temperature"></div>
+                    <div class="forecast-wind"></div>
+                    <div class="forecast-humidity"></div>
+                    <i class="forecast-weather-icon fas"></i>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <!-- <h4>Day 4</h4> -->
+                  <div class="forecast-item">
+                    <div class="forecast-date"></div>
+                    <div class="forecast-temperature"></div>
+                    <div class="forecast-wind"></div>
+                    <div class="forecast-humidity"></div>
+                    <i class="forecast-weather-icon fas"></i>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <!-- <h4>Day 5</h4> -->
+                  <div class="forecast-item">
+                    <div class="forecast-date"></div>
+                    <div class="forecast-temperature"></div>
+                    <div class="forecast-wind"></div>
+                    <div class="forecast-humidity"></div>
+                    <i class="forecast-weather-icon fas"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
+
+
