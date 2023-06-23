@@ -1,0 +1,83 @@
+
+/* style.css */
+
+header {
+    background-color: #0056b3;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin: 20px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+
+  .header {
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #history {
+    margin-top: 10px;
+  }
+  
+  .history-item {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .history-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #current {
+    margin-top: 20px;
+  }
+  
+  #current div {
+    margin-bottom: 10px;
+  }
+  
+  .forecast-item {
+    height: auto;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-inline: 5px;
+    background-color: aquamarine;
+  }
+  
+  #forecastItemsDiv {
+    flex: 0 0 calc(20% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    
+  }
+  .weather-container {
+    margin-left: auto;
+    padding: auto;
+  }
+  
+  
